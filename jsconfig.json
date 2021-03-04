@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}
+
+
+//报错不用管 https://github.com/motdotla/dotenv/issues/475

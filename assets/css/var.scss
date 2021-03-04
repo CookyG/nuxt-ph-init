@@ -1,0 +1,29 @@
+@mixin wh($w:100%, $h:100%) {
+    width: $w;
+    height: $h;
+}
+
+.flex-row {
+    display: flex;
+}
+
+@mixin fx ($w:space-between, $v:center) {
+  display: flex;
+  justify-content: $w;
+  align-items: $v;
+}
+
+$border-color: #E7E7E7;
+$module-main-color:#4CC5CD;
+$main-color:#164290;
+$followUp-main-color:#164290;
+$table-border-color: #EEEFF3;
+.bscroll-indicator {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+@mixin fx($w:space-between, $v:center) {
+    display: flex;
+    justify-content: $w;
+    align-items: $v;
+}
