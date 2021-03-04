@@ -1,20 +1,38 @@
-# nuxt-demo
+# nuxt-init
 
-## Build Setup
+## 目录结构
 
-```bash
-# install dependencies
-$ yarn install
+```
+├── assets //公用包目录(css js images)
+├── components //公用组件目录
+├── config
+│   ├── api //接口地址
+│   ├── axiosConfig //axios 配置
+│   ├── env.js  //环境变量配置
+│   └── router //路由配置
+├── jsconfig.json
+├── layouts // 页面入口模板
+├── nuxt.config.js //nuxt 配置 一般不需要动
+├── package.json
+├── pages //为自动生成路由的页面 一般不用
+├── plugins //插件集
+├── static //静态目录 不会参与打包 相当于public
+├── store //状态管理
+├── views
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## 运行
+
+```bash
+# 安装依赖包
+$ yarn install
+
+# 服务地址 localhost:3000
+$ yarn dev
+
+# 打包静态页面
+$ yarn web
+```
+
+文档参考 [Nuxt.js docs](https://nuxtjs.org).
